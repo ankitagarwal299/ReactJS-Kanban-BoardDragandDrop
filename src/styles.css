@@ -1,0 +1,71 @@
+.App {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1125px;
+  max-width: 90vw;
+  border: 1px solid black;
+  height: 100vh;
+  display: flex;
+}
+
+.add-new-task {
+  width: 300px;
+  height: 25px;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.3rem 0.7rem;
+}
+
+.kanban-single-columns {
+  width: 100%;
+  max-width: 90vw;
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: green;
+}
+
+.kanban-single-columns > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.kanban-single-columns .all-items-container {
+  border: 1px solid black;
+}
+
+.item {
+  width: 80%;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  background-color: green;
+  color: #fff;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    border: 1px solid black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kanban-single-columns {
+    border: 1px solid blue;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
